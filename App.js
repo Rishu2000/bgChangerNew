@@ -3,7 +3,7 @@ import {Text,StyleSheet,View} from "react-native"
 const App = () => {
   return(
     <>
-    <View style={styles.container}>
+    <View style={[styles.container,{backgroundColor:"#0f0"}]}>
     <Text>Rishav kumar</Text>
     </View>
     </>
