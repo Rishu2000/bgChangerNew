@@ -4,7 +4,7 @@ const App = () => {
   return(
     <>
     <View style={[styles.container,{backgroundColor:"#0f0"}]}>
-    <Text>Rishav kumar</Text>
+    <Text style={styles.text}>tap me</Text>
     </View>
     </>
   )
@@ -18,5 +18,13 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems:"center",
     justifyContent:"center"
+  },
+  text:{
+    fontSize:30,
+    backgroundColor:"#f00",
+    paddingHorizontal:30,
+    paddingVertical:10,
+    borderRadius:15,
+    textTransform:"uppercase"
   }
 });
