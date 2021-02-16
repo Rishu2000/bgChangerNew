@@ -1,10 +1,22 @@
 import React from "react"
-import {Text,StyleSheet} from "react-native"
+import {Text,StyleSheet,View} from "react-native"
 const App = () => {
   return(
     <>
-    <Text style={{backgroundColor:"#0f0"}}>Rishav kumar</Text>
+    <View style={styles.container}>
+    <Text>Rishav kumar</Text>
+    </View>
     </>
   )
 }
 export default App;
+
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex:1,
+    alignItems:"center",
+    justifyContent:"center"
+  }
+});
