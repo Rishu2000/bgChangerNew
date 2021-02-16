@@ -1,11 +1,17 @@
 import React, {useState} from "react"
-import {Text,StyleSheet,View} from "react-native"
+import {Text,StyleSheet,View,TouchableOpacity, Touchable} from "react-native"
 const App = () => {
-  const [bgColor,setBgColor] = useState("#0f0")
+  const [bgColor,setBgColor] = useState("rgb(32,0,126)")
+  const handleBGC = () => {
+    let color = "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 256)+")";
+    setBgColor(color);
+  }
   return(
     <>
     <View style={[styles.container,{backgroundColor:bgColor}]}>
+    <TouchableOpacity onPress={handleBGC}>
     <Text style={styles.text}>tap me</Text>
+    </TouchableOpacity>
     </View>
     </>
   )
