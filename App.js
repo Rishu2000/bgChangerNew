@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {Text,StyleSheet,View,TouchableOpacity, Touchable} from "react-native"
+import {Text,StyleSheet,View,TouchableOpacity, Touchable,StatusBar} from "react-native"
 const App = () => {
   const [bgColor,setBgColor] = useState("rgb(32,0,126)")
   const handleBGC = () => {
@@ -8,6 +8,7 @@ const App = () => {
   }
   return(
     <>
+    <StatusBar backgroundColor={bgColor}/>
     <View style={[styles.container,{backgroundColor:bgColor}]}>
     <TouchableOpacity onPress={handleBGC}>
     <Text style={styles.text}>tap me</Text>
