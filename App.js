@@ -1,9 +1,9 @@
 import React from "react"
-import {Text} from "react-native"
+import {Text,StyleSheet} from "react-native"
 const App = () => {
   return(
     <>
-    <Text>Rishav kumar shah</Text>
+    <Text style={{backgroundColor:"#0f0"}}>Rishav kumar</Text>
     </>
   )
 }
