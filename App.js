@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import {Text,StyleSheet,View,TouchableOpacity, Touchable,StatusBar} from "react-native"
 const App = () => {
   const [bgColor,setBgColor] = useState("rgb(32,0,126)")
+  const [name,setName] = useState("Rishav")
   const handleBGC = () => {
     let color = "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 256)+")";
     setBgColor(color);
