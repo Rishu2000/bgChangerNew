@@ -1,9 +1,10 @@
-import React from "react"
+import React, {useState} from "react"
 import {Text,StyleSheet,View} from "react-native"
 const App = () => {
+  const [bgColor,setBgColor] = useState("#0f0")
   return(
     <>
-    <View style={[styles.container,{backgroundColor:"#0f0"}]}>
+    <View style={[styles.container,{backgroundColor:bgColor}]}>
     <Text style={styles.text}>tap me</Text>
     </View>
     </>
